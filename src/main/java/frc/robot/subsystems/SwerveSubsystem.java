@@ -61,7 +61,6 @@ public class SwerveSubsystem extends SubsystemBase {
             MotorConstants.BACK_RIGHT_STEER_ID,
             MotorConstants.BACK_RIGHT_CAN_CODER_ID,
             Constants.SwerveConstants.CANCoderValue12)
-            
     };
 
     pidggy = new Pigeon2(16);

@@ -46,6 +46,11 @@ public final class Constants {
     public static final int FRONT_RIGHT_CAN_CODER_ID = 10;
     public static final int BACK_LEFT_CAN_CODER_ID = 11;
     public static final int BACK_RIGHT_CAN_CODER_ID = 12;
+    
+    public static final int FALCON_MOTOR1_CAN_CODER_ID = 13;
+    public static final int FALCON_MOTOR2_CAN_CODER_ID = 14;
+    public static final int NEO_MOTOR3_CAN_CODER_ID = 15;
+    public static final int NEO_MOTOR4_CAN_CODER_ID = 16;
 
     public static final double MAX_SPEED = 4.96824;  
     public static final double MAX_ANGULAR_SPEED = (4 * Math.PI) / 3;
@@ -100,6 +105,13 @@ public final class Constants {
 
     public static final double offBalanceAngleThreshold = 10;
     public static final double onBalanceAngleThreshold = 5;
+  }
+
+  public static class ShooterConstants{
+    public static class PIDConstants{
+    public static final PID FALCON_MOTOR1_PID = new PID(0,0,0,0);
+    public static final PID FALCON_MOTOR2_PID = new PID(0, 0, 0, 0);
+    }
   }
 
   public static class AutoConstants{
